@@ -1,0 +1,647 @@
+2018-03-20 16:12:41.353  INFO 8538 --- [restartedMain] net.sppan.blog.BlogITApplication         : Starting BlogITApplication on luoyaqideMacBook-Pro.local with PID 8538 (/Users/luoyaqi/Workspace/Java/blog/blogIT/blogIT/target/classes started by luoyaqi in /Users/luoyaqi/Workspace/Java/blog/blogIT/blogIT)
+2018-03-20 16:12:41.354 DEBUG 8538 --- [restartedMain] net.sppan.blog.BlogITApplication         : Running with Spring Boot v1.5.0.RELEASE, Spring v4.3.6.RELEASE
+2018-03-20 16:12:41.354  INFO 8538 --- [restartedMain] net.sppan.blog.BlogITApplication         : No active profile set, falling back to default profiles: default
+2018-03-20 16:12:41.391  INFO 8538 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d7b7687: startup date [Tue Mar 20 16:12:41 CST 2018]; root of context hierarchy
+2018-03-20 16:12:42.435  INFO 8538 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-20 16:12:42.507  INFO 8538 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-20 16:12:42.545  INFO 8538 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$96a2bb12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-20 16:12:42.583  INFO 8538 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$dfb4f130] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-20 16:12:42.880  INFO 8538 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-03-20 16:12:42.888  INFO 8538 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-03-20 16:12:42.889  INFO 8538 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2018-03-20 16:12:42.942  INFO 8538 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-20 16:12:42.943  INFO 8538 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1554 ms
+2018-03-20 16:12:43.052  INFO 8538 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-20 16:12:43.056  INFO 8538 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-20 16:12:43.056  INFO 8538 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-20 16:12:43.056  INFO 8538 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-20 16:12:43.057  INFO 8538 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-20 16:12:46.139  INFO 8538 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-20 16:12:46.153  INFO 8538 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-20 16:12:46.224  INFO 8538 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2018-03-20 16:12:46.225  INFO 8538 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-20 16:12:46.226  INFO 8538 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-20 16:12:46.257  INFO 8538 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-20 16:12:46.491  INFO 8538 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-03-20 16:12:46.740  INFO 8538 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: net.sppan.blog.entity.LoginLog (class must be instantiated by Interceptor)
+2018-03-20 16:12:46.847  INFO 8538 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-03-20 16:12:46.900  INFO 8538 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_blog
+2018-03-20 16:12:46.919  INFO 8538 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_blog
+2018-03-20 16:12:47.059  INFO 8538 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_category
+2018-03-20 16:12:47.069  INFO 8538 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_category
+2018-03-20 16:12:47.169  INFO 8538 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_login_log
+2018-03-20 16:12:47.179  INFO 8538 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_login_log
+2018-03-20 16:12:47.289  INFO 8538 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_options
+2018-03-20 16:12:47.300  INFO 8538 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_options
+2018-03-20 16:12:47.402  INFO 8538 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_resource
+2018-03-20 16:12:47.412  INFO 8538 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_resource
+2018-03-20 16:12:47.749  INFO 8538 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_resource_category
+2018-03-20 16:12:47.779  INFO 8538 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_resource_category
+2018-03-20 16:12:47.909  INFO 8538 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_session
+2018-03-20 16:12:47.929  INFO 8538 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_session
+2018-03-20 16:12:48.029  INFO 8538 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_tag
+2018-03-20 16:12:48.040  INFO 8538 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_tag
+2018-03-20 16:12:48.229  INFO 8538 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_user
+2018-03-20 16:12:48.249  INFO 8538 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_user
+2018-03-20 16:12:50.017  INFO 8538 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-20 16:12:50.038  INFO 8538 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2018-03-20 16:12:50.057  WARN 8538 --- [restartedMain] n.sf.ehcache.config.CacheConfiguration   : Statistics can no longer be enabled via configuration.
+2018-03-20 16:12:50.574  INFO 8538 --- [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-03-20 16:12:50.680  INFO 8538 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-20 16:12:50.967 ERROR 8538 --- [restartedMain] net.sppan.blog.lucene.LuceneSearcher     : delete allBean to lucene error
+
+java.io.IOException: Cannot create directory: /lucene
+	at org.apache.lucene.store.NativeFSLock.obtain(NativeFSLockFactory.java:171)
+	at org.apache.lucene.store.Lock.obtain(Lock.java:77)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:707)
+	at net.sppan.blog.lucene.LuceneSearcher.deleteAllBean(LuceneSearcher.java:144)
+	at net.sppan.blog.lucene.LuceneSearcher.reloadIndex(LuceneSearcher.java:327)
+	at net.sppan.blog.lucene.SearcherKit.reloadIndex(SearcherKit.java:71)
+	at net.sppan.blog.config.SiteConfig.reloadIndex(SiteConfig.java:52)
+	at net.sppan.blog.config.SiteConfig.afterPropertiesSet(SiteConfig.java:34)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at net.sppan.blog.BlogITApplication.main(BlogITApplication.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+
+2018-03-20 16:12:51.352  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d7b7687: startup date [Tue Mar 20 16:12:41 CST 2018]; root of context hierarchy
+2018-03-20 16:12:51.408  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/image]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.UploadController.upload(org.springframework.web.multipart.MultipartFile) throws java.io.IOException
+2018-03-20 16:12:51.411  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/about/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminAboutController.index()
+2018-03-20 16:12:51.412  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/about/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminAboutController.save(java.lang.String)
+2018-03-20 16:12:51.413  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminBlogController.index()
+2018-03-20 16:12:51.414  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminBlogController.form(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 16:12:51.414  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/{id}/del],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminBlogController.delete(java.lang.Long)
+2018-03-20 16:12:51.414  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/list],methods=[POST]}" onto public org.springframework.data.domain.Page<net.sppan.blog.entity.Blog> net.sppan.blog.controller.admin.AdminBlogController.list()
+2018-03-20 16:12:51.414  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminBlogController.save(net.sppan.blog.entity.Blog)
+2018-03-20 16:12:51.414  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/{id}/change],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminBlogController.change(java.lang.Long,java.lang.String)
+2018-03-20 16:12:51.416  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminCategoryController.index()
+2018-03-20 16:12:51.416  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminCategoryController.form(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 16:12:51.417  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/{id}/del],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminCategoryController.delete(java.lang.Long)
+2018-03-20 16:12:51.417  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/list],methods=[POST]}" onto public org.springframework.data.domain.Page<net.sppan.blog.entity.Category> net.sppan.blog.controller.admin.AdminCategoryController.list()
+2018-03-20 16:12:51.417  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminCategoryController.save(net.sppan.blog.entity.Category)
+2018-03-20 16:12:51.417  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/{id}/changeStatus],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminCategoryController.changeStatus(java.lang.Long)
+2018-03-20 16:12:51.418  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminIndexController.index()
+2018-03-20 16:12:51.418  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/welcome],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminIndexController.welcome()
+2018-03-20 16:12:51.420  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminTagController.index()
+2018-03-20 16:12:51.420  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminTagController.form(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 16:12:51.420  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/{id}/del],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminTagController.delete(java.lang.Long)
+2018-03-20 16:12:51.421  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/list],methods=[POST]}" onto public org.springframework.data.domain.Page<net.sppan.blog.entity.Tag> net.sppan.blog.controller.admin.AdminTagController.list()
+2018-03-20 16:12:51.421  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminTagController.save(net.sppan.blog.entity.Tag)
+2018-03-20 16:12:51.421  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/{id}/changeStatus],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminTagController.changeStatus(java.lang.Long)
+2018-03-20 16:12:51.421  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/tags_name],methods=[GET]}" onto public java.util.List<java.lang.String> net.sppan.blog.controller.admin.AdminTagController.tags_name()
+2018-03-20 16:12:51.424  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminUserController.index()
+2018-03-20 16:12:51.425  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminUserController.form(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 16:12:51.425  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/{id}/del],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminUserController.delete(java.lang.Long)
+2018-03-20 16:12:51.425  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/list],methods=[POST]}" onto public org.springframework.data.domain.Page<net.sppan.blog.entity.User> net.sppan.blog.controller.admin.AdminUserController.list()
+2018-03-20 16:12:51.425  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminUserController.save(net.sppan.blog.entity.User)
+2018-03-20 16:12:51.426  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.LoginController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.Boolean)
+2018-03-20 16:12:51.427  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.LoginController.login()
+2018-03-20 16:12:51.427  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logout],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-20 16:12:51.427  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/update_form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.LoginController.updatePWD()
+2018-03-20 16:12:51.427  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePwd],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.LoginController.updatePwd(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String)
+2018-03-20 16:12:51.428  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/b/index]}" onto public java.lang.String net.sppan.blog.controller.front.BlogController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+2018-03-20 16:12:51.428  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/b/view/{id}]}" onto public java.lang.String net.sppan.blog.controller.front.BlogController.view(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 16:12:51.429  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.index()
+2018-03-20 16:12:51.429  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/resource]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.resource()
+2018-03-20 16:12:51.429  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/talk]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.talk()
+2018-03-20 16:12:51.429  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/interview]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.interview()
+2018-03-20 16:12:51.429  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.about()
+2018-03-20 16:12:51.430  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/resource/index]}" onto public java.lang.String net.sppan.blog.controller.front.ResourceController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+2018-03-20 16:12:51.430  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/resource/c/{id}]}" onto public java.lang.String net.sppan.blog.controller.front.ResourceController.showResources(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 16:12:51.430  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/s]}" onto public java.lang.String net.sppan.blog.controller.front.SearchController.index(java.lang.String,java.lang.Integer,org.springframework.ui.ModelMap)
+2018-03-20 16:12:51.431  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/t/{tagName}]}" onto public java.lang.String net.sppan.blog.controller.front.TagController.index(java.lang.String,java.lang.Integer,org.springframework.ui.ModelMap)
+2018-03-20 16:12:51.433  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-20 16:12:51.433  INFO 8538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-20 16:12:51.463  INFO 8538 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-20 16:12:51.463  INFO 8538 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-20 16:12:51.503  INFO 8538 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-20 16:12:51.755  INFO 8538 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-20 16:12:51.801  INFO 8538 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-20 16:12:51.860  INFO 8538 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-03-20 16:12:51.866  INFO 8538 --- [restartedMain] net.sppan.blog.BlogITApplication         : Started BlogITApplication in 10.863 seconds (JVM running for 12.092)
+2018-03-20 16:16:21.165  INFO 8538 --- [Thread-33] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d7b7687: startup date [Tue Mar 20 16:12:41 CST 2018]; root of context hierarchy
+2018-03-20 16:16:21.168  INFO 8538 --- [Thread-33] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-20 16:16:21.172  INFO 8538 --- [Thread-33] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2018-03-20 16:16:21.175  INFO 8538 --- [Thread-33] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-20 16:16:27.560  INFO 8733 --- [restartedMain] net.sppan.blog.BlogITApplication         : Starting BlogITApplication on luoyaqideMacBook-Pro.local with PID 8733 (/Users/luoyaqi/Workspace/Java/blog/blogIT/blogIT/target/classes started by luoyaqi in /Users/luoyaqi/Workspace/Java/blog/blogIT/blogIT)
+2018-03-20 16:16:27.561 DEBUG 8733 --- [restartedMain] net.sppan.blog.BlogITApplication         : Running with Spring Boot v1.5.0.RELEASE, Spring v4.3.6.RELEASE
+2018-03-20 16:16:27.561  INFO 8733 --- [restartedMain] net.sppan.blog.BlogITApplication         : No active profile set, falling back to default profiles: default
+2018-03-20 16:16:27.612  INFO 8733 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47a81838: startup date [Tue Mar 20 16:16:27 CST 2018]; root of context hierarchy
+2018-03-20 16:16:28.591  INFO 8733 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-20 16:16:28.650  INFO 8733 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-20 16:16:28.685  INFO 8733 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e0d5b1e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-20 16:16:28.719  INFO 8733 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$29e7e7fe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-20 16:16:29.017  INFO 8733 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-03-20 16:16:29.025  INFO 8733 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-03-20 16:16:29.026  INFO 8733 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2018-03-20 16:16:29.078  INFO 8733 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-20 16:16:29.078  INFO 8733 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1469 ms
+2018-03-20 16:16:29.187  INFO 8733 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-20 16:16:29.190  INFO 8733 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-20 16:16:29.190  INFO 8733 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-20 16:16:29.190  INFO 8733 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-20 16:16:29.191  INFO 8733 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-20 16:16:31.159  INFO 8733 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-20 16:16:31.171  INFO 8733 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-20 16:16:31.246  INFO 8733 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2018-03-20 16:16:31.248  INFO 8733 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-20 16:16:31.249  INFO 8733 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-20 16:16:31.276  INFO 8733 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-20 16:16:31.456  INFO 8733 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-03-20 16:16:31.682  INFO 8733 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: net.sppan.blog.entity.LoginLog (class must be instantiated by Interceptor)
+2018-03-20 16:16:31.774  INFO 8733 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-03-20 16:16:33.677  INFO 8733 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-20 16:16:33.697  INFO 8733 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2018-03-20 16:16:33.714  WARN 8733 --- [restartedMain] n.sf.ehcache.config.CacheConfiguration   : Statistics can no longer be enabled via configuration.
+2018-03-20 16:16:34.147  INFO 8733 --- [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-03-20 16:16:34.236  INFO 8733 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-20 16:16:34.789  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47a81838: startup date [Tue Mar 20 16:16:27 CST 2018]; root of context hierarchy
+2018-03-20 16:16:34.855  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/image]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.UploadController.upload(org.springframework.web.multipart.MultipartFile) throws java.io.IOException
+2018-03-20 16:16:34.859  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/about/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminAboutController.index()
+2018-03-20 16:16:34.860  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/about/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminAboutController.save(java.lang.String)
+2018-03-20 16:16:34.862  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminBlogController.index()
+2018-03-20 16:16:34.862  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminBlogController.form(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 16:16:34.862  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/{id}/del],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminBlogController.delete(java.lang.Long)
+2018-03-20 16:16:34.862  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/list],methods=[POST]}" onto public org.springframework.data.domain.Page<net.sppan.blog.entity.Blog> net.sppan.blog.controller.admin.AdminBlogController.list()
+2018-03-20 16:16:34.863  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminBlogController.save(net.sppan.blog.entity.Blog)
+2018-03-20 16:16:34.863  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/{id}/change],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminBlogController.change(java.lang.Long,java.lang.String)
+2018-03-20 16:16:34.865  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminCategoryController.index()
+2018-03-20 16:16:34.865  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminCategoryController.form(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 16:16:34.865  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/{id}/del],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminCategoryController.delete(java.lang.Long)
+2018-03-20 16:16:34.865  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/list],methods=[POST]}" onto public org.springframework.data.domain.Page<net.sppan.blog.entity.Category> net.sppan.blog.controller.admin.AdminCategoryController.list()
+2018-03-20 16:16:34.865  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminCategoryController.save(net.sppan.blog.entity.Category)
+2018-03-20 16:16:34.866  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/{id}/changeStatus],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminCategoryController.changeStatus(java.lang.Long)
+2018-03-20 16:16:34.866  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminIndexController.index()
+2018-03-20 16:16:34.867  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/welcome],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminIndexController.welcome()
+2018-03-20 16:16:34.869  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminTagController.index()
+2018-03-20 16:16:34.869  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminTagController.form(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 16:16:34.870  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/{id}/del],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminTagController.delete(java.lang.Long)
+2018-03-20 16:16:34.870  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/list],methods=[POST]}" onto public org.springframework.data.domain.Page<net.sppan.blog.entity.Tag> net.sppan.blog.controller.admin.AdminTagController.list()
+2018-03-20 16:16:34.870  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminTagController.save(net.sppan.blog.entity.Tag)
+2018-03-20 16:16:34.870  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/{id}/changeStatus],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminTagController.changeStatus(java.lang.Long)
+2018-03-20 16:16:34.871  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/tags_name],methods=[GET]}" onto public java.util.List<java.lang.String> net.sppan.blog.controller.admin.AdminTagController.tags_name()
+2018-03-20 16:16:34.874  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminUserController.index()
+2018-03-20 16:16:34.874  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminUserController.form(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 16:16:34.875  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/{id}/del],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminUserController.delete(java.lang.Long)
+2018-03-20 16:16:34.875  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/list],methods=[POST]}" onto public org.springframework.data.domain.Page<net.sppan.blog.entity.User> net.sppan.blog.controller.admin.AdminUserController.list()
+2018-03-20 16:16:34.875  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminUserController.save(net.sppan.blog.entity.User)
+2018-03-20 16:16:34.876  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.LoginController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.Boolean)
+2018-03-20 16:16:34.877  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.LoginController.login()
+2018-03-20 16:16:34.877  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logout],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-20 16:16:34.877  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/update_form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.LoginController.updatePWD()
+2018-03-20 16:16:34.877  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePwd],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.LoginController.updatePwd(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String)
+2018-03-20 16:16:34.878  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/b/index]}" onto public java.lang.String net.sppan.blog.controller.front.BlogController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+2018-03-20 16:16:34.878  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/b/view/{id}]}" onto public java.lang.String net.sppan.blog.controller.front.BlogController.view(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 16:16:34.879  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.index()
+2018-03-20 16:16:34.879  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/resource]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.resource()
+2018-03-20 16:16:34.879  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/talk]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.talk()
+2018-03-20 16:16:34.879  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/interview]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.interview()
+2018-03-20 16:16:34.879  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.about()
+2018-03-20 16:16:34.880  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/resource/index]}" onto public java.lang.String net.sppan.blog.controller.front.ResourceController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+2018-03-20 16:16:34.880  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/resource/c/{id}]}" onto public java.lang.String net.sppan.blog.controller.front.ResourceController.showResources(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 16:16:34.880  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/s]}" onto public java.lang.String net.sppan.blog.controller.front.SearchController.index(java.lang.String,java.lang.Integer,org.springframework.ui.ModelMap)
+2018-03-20 16:16:34.880  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/t/{tagName}]}" onto public java.lang.String net.sppan.blog.controller.front.TagController.index(java.lang.String,java.lang.Integer,org.springframework.ui.ModelMap)
+2018-03-20 16:16:34.882  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-20 16:16:34.882  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-20 16:16:34.916  INFO 8733 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-20 16:16:34.917  INFO 8733 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-20 16:16:34.954  INFO 8733 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-20 16:16:35.230  INFO 8733 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-20 16:16:35.285  INFO 8733 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-20 16:16:35.342  INFO 8733 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-03-20 16:16:35.347  INFO 8733 --- [restartedMain] net.sppan.blog.BlogITApplication         : Started BlogITApplication in 8.126 seconds (JVM running for 8.908)
+2018-03-20 16:17:00.370  INFO 8733 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-20 16:17:00.370  INFO 8733 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-20 16:17:00.386  INFO 8733 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-03-20 16:17:15.492 ERROR 8733 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at net.sppan.blog.service.impl.BlogServiceImpl.findById(BlogServiceImpl.java:55)
+	at net.sppan.blog.controller.front.BlogController.view(BlogController.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-03-20 16:18:25.260 ERROR 8733 --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at net.sppan.blog.service.impl.BlogServiceImpl.findById(BlogServiceImpl.java:55)
+	at net.sppan.blog.controller.front.BlogController.view(BlogController.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-03-20 16:45:29.781  INFO 8733 --- [Thread-25] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47a81838: startup date [Tue Mar 20 16:16:27 CST 2018]; root of context hierarchy
+2018-03-20 16:45:29.782  INFO 8733 --- [Thread-25] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-20 16:45:29.785  INFO 8733 --- [Thread-25] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2018-03-20 16:45:29.788  INFO 8733 --- [Thread-25] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-20 16:45:30.241  INFO 8733 --- [restartedMain] net.sppan.blog.BlogITApplication         : Starting BlogITApplication on luoyaqideMacBook-Pro.local with PID 8733 (/Users/luoyaqi/Workspace/Java/blog/blogIT/blogIT/target/classes started by luoyaqi in /Users/luoyaqi/Workspace/Java/blog/blogIT/blogIT)
+2018-03-20 16:45:30.242 DEBUG 8733 --- [restartedMain] net.sppan.blog.BlogITApplication         : Running with Spring Boot v1.5.0.RELEASE, Spring v4.3.6.RELEASE
+2018-03-20 16:45:30.242  INFO 8733 --- [restartedMain] net.sppan.blog.BlogITApplication         : No active profile set, falling back to default profiles: default
+2018-03-20 16:45:30.245  INFO 8733 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68e2e524: startup date [Tue Mar 20 16:45:30 CST 2018]; root of context hierarchy
+2018-03-20 16:45:30.662  INFO 8733 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-20 16:45:30.666  INFO 8733 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-20 16:45:30.673  INFO 8733 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e0d5b1e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-20 16:45:30.676  INFO 8733 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$29e7e7fe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-20 16:45:30.757  INFO 8733 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-03-20 16:45:30.760  INFO 8733 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-03-20 16:45:30.760  INFO 8733 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2018-03-20 16:45:30.769  INFO 8733 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-20 16:45:30.774  INFO 8733 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 529 ms
+2018-03-20 16:45:30.824  INFO 8733 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-20 16:45:30.824  INFO 8733 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-20 16:45:30.825  INFO 8733 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-20 16:45:30.825  INFO 8733 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-20 16:45:30.825  INFO 8733 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-20 16:45:32.423  INFO 8733 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-20 16:45:32.424  INFO 8733 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-20 16:45:32.445  INFO 8733 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-03-20 16:45:32.474  INFO 8733 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: net.sppan.blog.entity.LoginLog (class must be instantiated by Interceptor)
+2018-03-20 16:45:32.502  INFO 8733 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-03-20 16:45:34.446  INFO 8733 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-20 16:45:34.460  INFO 8733 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2018-03-20 16:45:34.462  WARN 8733 --- [restartedMain] n.sf.ehcache.config.CacheConfiguration   : Statistics can no longer be enabled via configuration.
+2018-03-20 16:45:34.620  INFO 8733 --- [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-03-20 16:45:34.659  INFO 8733 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-20 16:45:35.490  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68e2e524: startup date [Tue Mar 20 16:45:30 CST 2018]; root of context hierarchy
+2018-03-20 16:45:35.499  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/image]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.UploadController.upload(org.springframework.web.multipart.MultipartFile) throws java.io.IOException
+2018-03-20 16:45:35.502  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/about/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminAboutController.index()
+2018-03-20 16:45:35.502  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/about/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminAboutController.save(java.lang.String)
+2018-03-20 16:45:35.503  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminBlogController.index()
+2018-03-20 16:45:35.503  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminBlogController.form(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 16:45:35.503  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/{id}/del],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminBlogController.delete(java.lang.Long)
+2018-03-20 16:45:35.504  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/list],methods=[POST]}" onto public org.springframework.data.domain.Page<net.sppan.blog.entity.Blog> net.sppan.blog.controller.admin.AdminBlogController.list()
+2018-03-20 16:45:35.504  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminBlogController.save(net.sppan.blog.entity.Blog)
+2018-03-20 16:45:35.504  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/{id}/change],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminBlogController.change(java.lang.Long,java.lang.String)
+2018-03-20 16:45:35.505  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminCategoryController.index()
+2018-03-20 16:45:35.505  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminCategoryController.form(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 16:45:35.505  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/{id}/del],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminCategoryController.delete(java.lang.Long)
+2018-03-20 16:45:35.506  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/list],methods=[POST]}" onto public org.springframework.data.domain.Page<net.sppan.blog.entity.Category> net.sppan.blog.controller.admin.AdminCategoryController.list()
+2018-03-20 16:45:35.506  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminCategoryController.save(net.sppan.blog.entity.Category)
+2018-03-20 16:45:35.506  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/{id}/changeStatus],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminCategoryController.changeStatus(java.lang.Long)
+2018-03-20 16:45:35.507  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminIndexController.index()
+2018-03-20 16:45:35.507  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/welcome],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminIndexController.welcome()
+2018-03-20 16:45:35.508  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminTagController.index()
+2018-03-20 16:45:35.508  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminTagController.form(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 16:45:35.509  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/{id}/del],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminTagController.delete(java.lang.Long)
+2018-03-20 16:45:35.509  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/list],methods=[POST]}" onto public org.springframework.data.domain.Page<net.sppan.blog.entity.Tag> net.sppan.blog.controller.admin.AdminTagController.list()
+2018-03-20 16:45:35.509  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminTagController.save(net.sppan.blog.entity.Tag)
+2018-03-20 16:45:35.509  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/{id}/changeStatus],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminTagController.changeStatus(java.lang.Long)
+2018-03-20 16:45:35.509  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/tags_name],methods=[GET]}" onto public java.util.List<java.lang.String> net.sppan.blog.controller.admin.AdminTagController.tags_name()
+2018-03-20 16:45:35.510  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminUserController.index()
+2018-03-20 16:45:35.510  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminUserController.form(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 16:45:35.511  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/{id}/del],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminUserController.delete(java.lang.Long)
+2018-03-20 16:45:35.511  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/list],methods=[POST]}" onto public org.springframework.data.domain.Page<net.sppan.blog.entity.User> net.sppan.blog.controller.admin.AdminUserController.list()
+2018-03-20 16:45:35.511  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminUserController.save(net.sppan.blog.entity.User)
+2018-03-20 16:45:35.512  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.LoginController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.Boolean)
+2018-03-20 16:45:35.512  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.LoginController.login()
+2018-03-20 16:45:35.512  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logout],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-20 16:45:35.512  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/update_form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.LoginController.updatePWD()
+2018-03-20 16:45:35.512  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePwd],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.LoginController.updatePwd(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String)
+2018-03-20 16:45:35.514  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/b/index]}" onto public java.lang.String net.sppan.blog.controller.front.BlogController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+2018-03-20 16:45:35.514  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/b/view/{id}]}" onto public java.lang.String net.sppan.blog.controller.front.BlogController.view(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 16:45:35.514  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.index()
+2018-03-20 16:45:35.514  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/resource]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.resource()
+2018-03-20 16:45:35.514  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/talk]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.talk()
+2018-03-20 16:45:35.514  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/interview]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.interview()
+2018-03-20 16:45:35.514  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.about()
+2018-03-20 16:45:35.515  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/resource/index]}" onto public java.lang.String net.sppan.blog.controller.front.ResourceController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+2018-03-20 16:45:35.515  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/resource/c/{id}]}" onto public java.lang.String net.sppan.blog.controller.front.ResourceController.showResources(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 16:45:35.515  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/s]}" onto public java.lang.String net.sppan.blog.controller.front.SearchController.index(java.lang.String,java.lang.Integer,org.springframework.ui.ModelMap)
+2018-03-20 16:45:35.515  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/t/{tagName}]}" onto public java.lang.String net.sppan.blog.controller.front.TagController.index(java.lang.String,java.lang.Integer,org.springframework.ui.ModelMap)
+2018-03-20 16:45:35.517  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-20 16:45:35.517  INFO 8733 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-20 16:45:35.526  INFO 8733 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-20 16:45:35.527  INFO 8733 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-20 16:45:35.542  INFO 8733 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-20 16:45:35.611  INFO 8733 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-20 16:45:35.688  INFO 8733 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-20 16:45:35.697  INFO 8733 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-03-20 16:45:35.699  INFO 8733 --- [restartedMain] net.sppan.blog.BlogITApplication         : Started BlogITApplication in 5.666 seconds (JVM running for 1749.317)
+2018-03-20 16:45:49.581  INFO 8733 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-20 16:45:49.581  INFO 8733 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-20 16:45:49.584  INFO 8733 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 3 ms
+2018-03-20 17:02:56.228  INFO 8733 --- [Thread-42] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68e2e524: startup date [Tue Mar 20 16:45:30 CST 2018]; root of context hierarchy
+2018-03-20 17:02:56.230  INFO 8733 --- [Thread-42] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-20 17:02:56.231  INFO 8733 --- [Thread-42] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2018-03-20 17:02:56.232  INFO 8733 --- [Thread-42] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-20 17:03:07.392  INFO 9066 --- [restartedMain] net.sppan.blog.BlogITApplication         : Starting BlogITApplication on luoyaqideMacBook-Pro.local with PID 9066 (/Users/luoyaqi/Workspace/Java/blog/blogIT/blogIT/target/classes started by luoyaqi in /Users/luoyaqi/Workspace/Java/blog/blogIT/blogIT)
+2018-03-20 17:03:07.393 DEBUG 9066 --- [restartedMain] net.sppan.blog.BlogITApplication         : Running with Spring Boot v1.5.0.RELEASE, Spring v4.3.6.RELEASE
+2018-03-20 17:03:07.393  INFO 9066 --- [restartedMain] net.sppan.blog.BlogITApplication         : No active profile set, falling back to default profiles: default
+2018-03-20 17:03:07.433  INFO 9066 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19c644b7: startup date [Tue Mar 20 17:03:07 CST 2018]; root of context hierarchy
+2018-03-20 17:03:08.533  INFO 9066 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-20 17:03:08.587  INFO 9066 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-20 17:03:08.615  INFO 9066 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bb2c2ea0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-20 17:03:08.644  INFO 9066 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$43e64be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-20 17:03:08.901  INFO 9066 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-03-20 17:03:08.909  INFO 9066 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-03-20 17:03:08.910  INFO 9066 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2018-03-20 17:03:08.979  INFO 9066 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-20 17:03:08.980  INFO 9066 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1553 ms
+2018-03-20 17:03:09.110  INFO 9066 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-20 17:03:09.114  INFO 9066 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-20 17:03:09.114  INFO 9066 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-20 17:03:09.115  INFO 9066 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-20 17:03:09.115  INFO 9066 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-20 17:03:11.003  INFO 9066 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-20 17:03:11.014  INFO 9066 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-20 17:03:11.063  INFO 9066 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2018-03-20 17:03:11.064  INFO 9066 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-20 17:03:11.065  INFO 9066 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-20 17:03:11.096  INFO 9066 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-20 17:03:11.290  INFO 9066 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-03-20 17:03:11.536  INFO 9066 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: net.sppan.blog.entity.LoginLog (class must be instantiated by Interceptor)
+2018-03-20 17:03:11.643  INFO 9066 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-03-20 17:03:11.662  INFO 9066 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_blog
+2018-03-20 17:03:11.669  INFO 9066 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_blog
+2018-03-20 17:03:11.773  INFO 9066 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_category
+2018-03-20 17:03:11.780  INFO 9066 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_category
+2018-03-20 17:03:11.882  INFO 9066 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_login_log
+2018-03-20 17:03:11.889  INFO 9066 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_login_log
+2018-03-20 17:03:12.033  INFO 9066 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_options
+2018-03-20 17:03:12.040  INFO 9066 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_options
+2018-03-20 17:03:12.164  INFO 9066 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_resource
+2018-03-20 17:03:12.170  INFO 9066 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_resource
+2018-03-20 17:03:12.274  INFO 9066 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_resource_category
+2018-03-20 17:03:12.280  INFO 9066 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_resource_category
+2018-03-20 17:03:12.393  INFO 9066 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_session
+2018-03-20 17:03:12.399  INFO 9066 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_session
+2018-03-20 17:03:12.509  INFO 9066 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_tag
+2018-03-20 17:03:12.515  INFO 9066 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_tag
+2018-03-20 17:03:12.633  INFO 9066 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_user
+2018-03-20 17:03:12.641  INFO 9066 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: tb_user
+2018-03-20 17:03:13.980  INFO 9066 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-20 17:03:14.005  INFO 9066 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2018-03-20 17:03:14.026  WARN 9066 --- [restartedMain] n.sf.ehcache.config.CacheConfiguration   : Statistics can no longer be enabled via configuration.
+2018-03-20 17:03:14.486  INFO 9066 --- [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-03-20 17:03:14.573  INFO 9066 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-20 17:03:15.120  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19c644b7: startup date [Tue Mar 20 17:03:07 CST 2018]; root of context hierarchy
+2018-03-20 17:03:15.179  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/image]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.UploadController.upload(org.springframework.web.multipart.MultipartFile) throws java.io.IOException
+2018-03-20 17:03:15.184  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/about/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminAboutController.index()
+2018-03-20 17:03:15.184  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/about/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminAboutController.save(java.lang.String)
+2018-03-20 17:03:15.186  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminBlogController.index()
+2018-03-20 17:03:15.187  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminBlogController.form(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 17:03:15.187  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/{id}/del],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminBlogController.delete(java.lang.Long)
+2018-03-20 17:03:15.187  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/list],methods=[POST]}" onto public org.springframework.data.domain.Page<net.sppan.blog.entity.Blog> net.sppan.blog.controller.admin.AdminBlogController.list()
+2018-03-20 17:03:15.187  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminBlogController.save(net.sppan.blog.entity.Blog)
+2018-03-20 17:03:15.188  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/{id}/change],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminBlogController.change(java.lang.Long,java.lang.String)
+2018-03-20 17:03:15.189  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminCategoryController.index()
+2018-03-20 17:03:15.190  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminCategoryController.form(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 17:03:15.190  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/{id}/del],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminCategoryController.delete(java.lang.Long)
+2018-03-20 17:03:15.190  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/list],methods=[POST]}" onto public org.springframework.data.domain.Page<net.sppan.blog.entity.Category> net.sppan.blog.controller.admin.AdminCategoryController.list()
+2018-03-20 17:03:15.191  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminCategoryController.save(net.sppan.blog.entity.Category)
+2018-03-20 17:03:15.191  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/{id}/changeStatus],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminCategoryController.changeStatus(java.lang.Long)
+2018-03-20 17:03:15.191  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminIndexController.index()
+2018-03-20 17:03:15.192  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/welcome],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminIndexController.welcome()
+2018-03-20 17:03:15.194  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminTagController.index()
+2018-03-20 17:03:15.194  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminTagController.form(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 17:03:15.194  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/{id}/del],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminTagController.delete(java.lang.Long)
+2018-03-20 17:03:15.194  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/list],methods=[POST]}" onto public org.springframework.data.domain.Page<net.sppan.blog.entity.Tag> net.sppan.blog.controller.admin.AdminTagController.list()
+2018-03-20 17:03:15.195  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminTagController.save(net.sppan.blog.entity.Tag)
+2018-03-20 17:03:15.195  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/{id}/changeStatus],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminTagController.changeStatus(java.lang.Long)
+2018-03-20 17:03:15.195  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/tags_name],methods=[GET]}" onto public java.util.List<java.lang.String> net.sppan.blog.controller.admin.AdminTagController.tags_name()
+2018-03-20 17:03:15.199  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminUserController.index()
+2018-03-20 17:03:15.199  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminUserController.form(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 17:03:15.199  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/{id}/del],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminUserController.delete(java.lang.Long)
+2018-03-20 17:03:15.199  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/list],methods=[POST]}" onto public org.springframework.data.domain.Page<net.sppan.blog.entity.User> net.sppan.blog.controller.admin.AdminUserController.list()
+2018-03-20 17:03:15.199  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminUserController.save(net.sppan.blog.entity.User)
+2018-03-20 17:03:15.201  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/update_form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.LoginController.updatePWD()
+2018-03-20 17:03:15.201  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logout],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-20 17:03:15.201  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePwd],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.LoginController.updatePwd(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String)
+2018-03-20 17:03:15.201  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.LoginController.login()
+2018-03-20 17:03:15.201  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.LoginController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.Boolean)
+2018-03-20 17:03:15.202  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/b/index]}" onto public java.lang.String net.sppan.blog.controller.front.BlogController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+2018-03-20 17:03:15.202  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/b/view/{id}]}" onto public java.lang.String net.sppan.blog.controller.front.BlogController.view(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 17:03:15.203  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.index()
+2018-03-20 17:03:15.203  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/talk]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.talk()
+2018-03-20 17:03:15.203  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.about()
+2018-03-20 17:03:15.203  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/interview]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.interview()
+2018-03-20 17:03:15.203  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/resource]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.resource()
+2018-03-20 17:03:15.204  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/resource/index]}" onto public java.lang.String net.sppan.blog.controller.front.ResourceController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+2018-03-20 17:03:15.204  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/resource/c/{id}]}" onto public java.lang.String net.sppan.blog.controller.front.ResourceController.showResources(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 17:03:15.204  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/s]}" onto public java.lang.String net.sppan.blog.controller.front.SearchController.index(java.lang.String,java.lang.Integer,org.springframework.ui.ModelMap)
+2018-03-20 17:03:15.205  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/t/{tagName}]}" onto public java.lang.String net.sppan.blog.controller.front.TagController.index(java.lang.String,java.lang.Integer,org.springframework.ui.ModelMap)
+2018-03-20 17:03:15.207  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-20 17:03:15.207  INFO 9066 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-20 17:03:15.239  INFO 9066 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-20 17:03:15.239  INFO 9066 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-20 17:03:15.278  INFO 9066 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-20 17:03:15.541  INFO 9066 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-20 17:03:15.614  INFO 9066 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-20 17:03:15.674  INFO 9066 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-03-20 17:03:15.680  INFO 9066 --- [restartedMain] net.sppan.blog.BlogITApplication         : Started BlogITApplication in 8.611 seconds (JVM running for 9.49)
+2018-03-20 17:03:54.832  INFO 9066 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-20 17:03:54.833  INFO 9066 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-20 17:03:54.847  INFO 9066 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2018-03-20 17:10:39.850  INFO 9066 --- [Thread-29] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19c644b7: startup date [Tue Mar 20 17:03:07 CST 2018]; root of context hierarchy
+2018-03-20 17:10:39.852  INFO 9066 --- [Thread-29] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-20 17:10:39.855  INFO 9066 --- [Thread-29] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2018-03-20 17:10:39.860  INFO 9066 --- [Thread-29] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-03-20 17:11:10.568  INFO 9122 --- [main] net.sppan.SPPanBlogApplicationTests      : Starting SPPanBlogApplicationTests on luoyaqideMacBook-Pro.local with PID 9122 (started by luoyaqi in /Users/luoyaqi/Workspace/Java/blog/blogIT/blogIT)
+2018-03-20 17:11:10.570 DEBUG 9122 --- [main] net.sppan.SPPanBlogApplicationTests      : Running with Spring Boot v1.5.0.RELEASE, Spring v4.3.6.RELEASE
+2018-03-20 17:11:10.572  INFO 9122 --- [main] net.sppan.SPPanBlogApplicationTests      : No active profile set, falling back to default profiles: default
+2018-03-20 17:11:10.618  INFO 9122 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@52b1beb6: startup date [Tue Mar 20 17:11:10 CST 2018]; root of context hierarchy
+2018-03-20 17:11:11.768  INFO 9122 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-20 17:11:11.836  INFO 9122 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-20 17:11:11.857  INFO 9122 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b32eda6b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-20 17:11:11.892  INFO 9122 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$fc411089] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-20 17:11:13.977  INFO 9122 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-20 17:11:13.994  INFO 9122 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-20 17:11:14.144  INFO 9122 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2018-03-20 17:11:14.145  INFO 9122 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-20 17:11:14.147  INFO 9122 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-20 17:11:14.186  INFO 9122 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-20 17:11:14.293  INFO 9122 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-03-20 17:11:14.614  INFO 9122 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: net.sppan.blog.entity.LoginLog (class must be instantiated by Interceptor)
+2018-03-20 17:11:14.749  INFO 9122 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-03-20 17:11:16.672  INFO 9122 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-20 17:11:16.697  INFO 9122 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2018-03-20 17:11:16.724  WARN 9122 --- [main] n.sf.ehcache.config.CacheConfiguration   : Statistics can no longer be enabled via configuration.
+2018-03-20 17:11:17.349  INFO 9122 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-03-20 17:11:17.438  INFO 9122 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-20 17:11:19.045  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@52b1beb6: startup date [Tue Mar 20 17:11:10 CST 2018]; root of context hierarchy
+2018-03-20 17:11:19.111  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/image]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.UploadController.upload(org.springframework.web.multipart.MultipartFile) throws java.io.IOException
+2018-03-20 17:11:19.115  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/about/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminAboutController.index()
+2018-03-20 17:11:19.115  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/about/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminAboutController.save(java.lang.String)
+2018-03-20 17:11:19.118  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminBlogController.index()
+2018-03-20 17:11:19.118  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminBlogController.form(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 17:11:19.118  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/{id}/del],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminBlogController.delete(java.lang.Long)
+2018-03-20 17:11:19.119  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/list],methods=[POST]}" onto public org.springframework.data.domain.Page<net.sppan.blog.entity.Blog> net.sppan.blog.controller.admin.AdminBlogController.list()
+2018-03-20 17:11:19.119  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminBlogController.save(net.sppan.blog.entity.Blog)
+2018-03-20 17:11:19.119  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blog/{id}/change],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminBlogController.change(java.lang.Long,java.lang.String)
+2018-03-20 17:11:19.121  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminCategoryController.index()
+2018-03-20 17:11:19.121  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminCategoryController.form(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 17:11:19.121  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/{id}/del],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminCategoryController.delete(java.lang.Long)
+2018-03-20 17:11:19.121  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/list],methods=[POST]}" onto public org.springframework.data.domain.Page<net.sppan.blog.entity.Category> net.sppan.blog.controller.admin.AdminCategoryController.list()
+2018-03-20 17:11:19.122  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminCategoryController.save(net.sppan.blog.entity.Category)
+2018-03-20 17:11:19.122  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/{id}/changeStatus],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminCategoryController.changeStatus(java.lang.Long)
+2018-03-20 17:11:19.123  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminIndexController.index()
+2018-03-20 17:11:19.124  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/welcome],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminIndexController.welcome()
+2018-03-20 17:11:19.126  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminTagController.index()
+2018-03-20 17:11:19.127  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminTagController.form(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 17:11:19.127  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/{id}/del],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminTagController.delete(java.lang.Long)
+2018-03-20 17:11:19.127  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/list],methods=[POST]}" onto public org.springframework.data.domain.Page<net.sppan.blog.entity.Tag> net.sppan.blog.controller.admin.AdminTagController.list()
+2018-03-20 17:11:19.128  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminTagController.save(net.sppan.blog.entity.Tag)
+2018-03-20 17:11:19.128  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/{id}/changeStatus],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminTagController.changeStatus(java.lang.Long)
+2018-03-20 17:11:19.128  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tag/tags_name],methods=[GET]}" onto public java.util.List<java.lang.String> net.sppan.blog.controller.admin.AdminTagController.tags_name()
+2018-03-20 17:11:19.132  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/index],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminUserController.index()
+2018-03-20 17:11:19.132  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.AdminUserController.form(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 17:11:19.132  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/{id}/del],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminUserController.delete(java.lang.Long)
+2018-03-20 17:11:19.133  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/list],methods=[POST]}" onto public org.springframework.data.domain.Page<net.sppan.blog.entity.User> net.sppan.blog.controller.admin.AdminUserController.list()
+2018-03-20 17:11:19.133  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/user/save],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.AdminUserController.save(net.sppan.blog.entity.User)
+2018-03-20 17:11:19.134  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.LoginController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.Boolean)
+2018-03-20 17:11:19.134  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.LoginController.login()
+2018-03-20 17:11:19.134  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logout],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-20 17:11:19.135  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/update_form],methods=[GET]}" onto public java.lang.String net.sppan.blog.controller.admin.LoginController.updatePWD()
+2018-03-20 17:11:19.135  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePwd],methods=[POST]}" onto public net.sppan.blog.common.JsonResult net.sppan.blog.controller.admin.LoginController.updatePwd(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String)
+2018-03-20 17:11:19.136  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/b/index]}" onto public java.lang.String net.sppan.blog.controller.front.BlogController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+2018-03-20 17:11:19.136  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/b/view/{id}]}" onto public java.lang.String net.sppan.blog.controller.front.BlogController.view(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 17:11:19.136  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.index()
+2018-03-20 17:11:19.137  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/resource]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.resource()
+2018-03-20 17:11:19.137  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/talk]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.talk()
+2018-03-20 17:11:19.137  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/interview]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.interview()
+2018-03-20 17:11:19.137  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about]}" onto public java.lang.String net.sppan.blog.controller.front.IndexController.about()
+2018-03-20 17:11:19.138  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/resource/index]}" onto public java.lang.String net.sppan.blog.controller.front.ResourceController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+2018-03-20 17:11:19.138  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/resource/c/{id}]}" onto public java.lang.String net.sppan.blog.controller.front.ResourceController.showResources(java.lang.Long,org.springframework.ui.ModelMap)
+2018-03-20 17:11:19.138  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/s]}" onto public java.lang.String net.sppan.blog.controller.front.SearchController.index(java.lang.String,java.lang.Integer,org.springframework.ui.ModelMap)
+2018-03-20 17:11:19.139  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/t/{tagName}]}" onto public java.lang.String net.sppan.blog.controller.front.TagController.index(java.lang.String,java.lang.Integer,org.springframework.ui.ModelMap)
+2018-03-20 17:11:19.140  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-20 17:11:19.141  INFO 9122 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-20 17:11:19.174  INFO 9122 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-20 17:11:19.174  INFO 9122 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-20 17:11:19.216  INFO 9122 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-20 17:11:19.491  INFO 9122 --- [main] net.sppan.SPPanBlogApplicationTests      : Started SPPanBlogApplicationTests in 9.425 seconds (JVM running for 10.021)
+2018-03-20 17:11:19.603  INFO 9122 --- [Thread-7] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@52b1beb6: startup date [Tue Mar 20 17:11:10 CST 2018]; root of context hierarchy
+2018-03-20 17:11:19.610  INFO 9122 --- [Thread-7] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2018-03-20 17:11:19.614  INFO 9122 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
