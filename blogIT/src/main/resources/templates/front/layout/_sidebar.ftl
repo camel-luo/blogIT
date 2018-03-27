@@ -73,7 +73,7 @@
  	  	</div>
  	  	<div class="qing-panel-body">
  	  		<ul>
-             	<li><a href="https://git.oschina.net/whoismy8023" target="_blank">我的开源中国</a></li>
+             	<li><a href="https://my.oschina.net/luoyaqi/blog" target="_blank">我的开源中国</a></li>
           	</ul>
  	  	</div>
  	</div>

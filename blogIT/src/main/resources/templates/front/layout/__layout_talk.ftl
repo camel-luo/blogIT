@@ -37,10 +37,10 @@ ${css!}
             <div class="am-collapse am-topbar-collapse" id="blog-collapse">
                 <ul class="am-nav am-nav-pills am-topbar-nav nav-menu-box">
                     <li><a href="${ctx!}/">首页</a></li>
-                    <li><a href="${ctx!}/resource">资源下载</a></li>
-                    <li><a href="${ctx!}/interview">面试助手</a></li>
-                    <li class="am-active"><a href="${ctx!}/talk">IT天地</a></li>
-                    <li><a href="${ctx!}/about">关于我们</a></li>
+                    <li><a href="${ctx!}/resource">书籍推荐</a></li>
+                    <li><a href="${ctx!}/interview">博文归类</a></li>
+                    <li class="am-active"><a href="${ctx!}/talk">猿洞畅谈</a></li>
+                    <li><a href="${ctx!}/about">关于ME</a></li>
                 </ul>
                 <form class="am-topbar-form am-topbar-right am-form-inline layui-form am-hide-sm-only" role="search" action="${ctx!}/s/">
                     <div class="am-form-group am-form-icon">
@@ -68,13 +68,34 @@ ${css!}
 <div class="am-g am-g-fixed qing-fixed qing-container">
     <!-- 正文内容开始-->
     <div class="am-u-md-9 am-u-sm-12">
-		<#nested>
+        攻城狮大叔正在努力开发中。。。
+		<#--<#nested>-->
+        <p style="text-indent:2em;">&nbsp;</p>
+        <p style="text-indent:2em;">&nbsp;</p>
+        <p style="text-indent:2em;">&nbsp;</p>
+        <p style="text-indent:2em;">&nbsp;</p>
+        <p style="text-indent:2em;">&nbsp;</p>
+        <p style="text-indent:2em;">&nbsp;</p>
+        <p style="text-indent:2em;">&nbsp;</p>
+        <p style="text-indent:2em;">&nbsp;</p>
+        <p style="text-indent:2em;">&nbsp;</p>
+        <p style="text-indent:2em;">&nbsp;</p>
+        <p style="text-indent:2em;">&nbsp;</p>
+        <p style="text-indent:2em;">&nbsp;</p>
+        <p style="text-indent:2em;">&nbsp;</p>
+        <p style="text-indent:2em;">&nbsp;</p>
+        <p style="text-indent:2em;">&nbsp;</p>
+        <p style="text-indent:2em;">&nbsp;</p>
+        <p style="text-indent:2em;">&nbsp;</p>
+        <p style="text-indent:2em;">&nbsp;</p>
+        <p style="text-indent:2em;">&nbsp;</p>
+        <p style="text-indent:2em;">&nbsp;</p>
     </div>
     <!--正文内容结束-->
 
     <!-- 侧边栏 开始-->
     <div class="am-u-md-3 am-u-sm-12">
-		<#include "/front/layout/_push.ftl" />
+		<#--<#include "/front/layout/_push.ftl" />-->
     </div>
     <!-- 侧边栏结束-->
 </div>
@@ -84,7 +105,7 @@ ${css!}
     <div class="qing-text-center">
         <p class="am-text-sm">${siteDescription!}</p>
     </div>
-    <div class="qing-text-center">Copyright © 2017 ${siteName!}  |  All Rights Reserved.  |  power by Habib</div>
+    <div class="qing-text-center">Copyright © 2018 ${siteName!}  |  All Rights Reserved.  |  power by Camel</div>
 </footer>
 <script src="${ctx!}/front/js/jquery.min.js"></script>
 <script src="${ctx!}/front/js/jquery.yestop.js"></script>

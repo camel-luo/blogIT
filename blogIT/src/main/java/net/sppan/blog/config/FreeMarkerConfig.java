@@ -13,6 +13,9 @@ import net.sppan.blog.directive.TagDirective;
 @Configuration
 public class FreeMarkerConfig {
 
+    /**
+     * Adds shared variable to the configuration; It uses Configurable.getObjectWrapper() to wrap the value, so it's important that the object wrapper is set before this.
+     */
     @Autowired
     private freemarker.template.Configuration configuration;
     
