@@ -5,6 +5,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	欢迎您使用blogIT系统，你的支持就是
+	欢迎您使用camelblog系统!
 </body>
 </html>

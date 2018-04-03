@@ -191,7 +191,7 @@ a:hover {
 	margin: 5px 0;
 }
 .qing-item-list {
-	line-height: 20px;
+	line-height: 30px;
 	white-space: nowrap;
 	overflow: hidden;
 	list-style: decimal-leading-zero inside;

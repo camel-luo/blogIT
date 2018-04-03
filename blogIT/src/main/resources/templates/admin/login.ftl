@@ -30,7 +30,7 @@
             <div>
                 <h1 class="logo-name">blog</h1>
             </div>
-            <h3>欢迎使用亚琦博客请登录</h3>
+            <h3>欢迎使用camelblog后台管理系统</h3>
 
             <form class="m-t" role="form" id="frm" action="${ctx!}/login" method="POST">
                 <div class="form-group">

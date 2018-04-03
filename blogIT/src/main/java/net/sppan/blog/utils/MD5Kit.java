@@ -41,7 +41,7 @@ public class MD5Kit {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(generatePasswordMD5("luoyaqi@#", "zmxyyZJkE-N6JjRhujp6U8l4Yu7vuQDZ"));;
+		System.out.println(generatePasswordMD5("gaoruizhong@#", "zmxyyZJkE-N6JjRhujp6U8l4Yu7vuQDZ"));;
 	}
 	
 }
