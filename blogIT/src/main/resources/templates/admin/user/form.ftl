@@ -102,13 +102,13 @@
     	    rules: {
     	    	userName: {
     	        required: true,
-    	        minlength: 4,
+    	        minlength: 2,
     	        email: true
     	      },
     	      	nickName: {
     	        required: true,
-    	        minlength: 4,
-    	    	maxlength: 10
+    	        minlength: 2,
+    	    	maxlength: 50
     	      },
     	      	salt: {
     	        required: true,
@@ -116,7 +116,7 @@
     	      },
     	      	description: {
     	        required: true,
-    	        maxlength: 40
+    	        maxlength: 100
     	      }
     	    },
     	    messages: {},

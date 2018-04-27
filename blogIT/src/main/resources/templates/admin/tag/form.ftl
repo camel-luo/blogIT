@@ -78,7 +78,7 @@
     	    	name: {
     	        required: true,
     	        minlength: 2,
-    	        maxlength: 8
+    	        maxlength: 100
     	      }
     	    },
     	    messages: {},
